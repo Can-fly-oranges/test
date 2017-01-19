@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>仿淘宝星级评分的CSS代码</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style>
+.star-rating{
+list-style:none;
+margin: 0px;
+padding:0px;
+height: 125px;
+width: 25px;
+position: relative;
+background: url(http://www.codefans.net/jscss/demoimg/200905/vert_star.gif) top left repeat-y; 
+}
+.star-rating li{
+padding:0px;
+margin:0px;
+float:left;
+}
+.star-rating li a{
+display:block;
+height:25px;
+width: 25px;
+text-decoration: none;
+text-indent: -9000px;
+z-index: 20;
+position: absolute;
+padding: 0px;
+}
+.star-rating li a:hover{
+background: url(http://www.codefans.net/jscss/demoimg/200905/vert_star.gif) right top repeat-y;
+z-index: 2;
+top: 0px;
+}
+.star-rating a.one-star{
+top: 0px;
+}
+.star-rating a.one-star:hover{
+height:25px;
+}
+.star-rating a.two-stars{
+top:25px;
+}
+.star-rating a.two-stars:hover{
+height: 50px;
+}
+.star-rating a.three-stars{
+top: 50px;
+}
+.star-rating a.three-stars:hover{
+height: 75px;
+}
+.star-rating a.four-stars{
+top: 75px;
+} 
+.star-rating a.four-stars:hover{
+height: 100px;
+}
+.star-rating a.five-stars{
+top: 100px;
+}
+.star-rating a.five-stars:hover{
+height: 125px;
+}
+.star-rating li.current-rating{
+background: url(http://www.codefans.net/jscss/demoimg/200905/vert_star.gif) center top repeat-y;
+position: absolute;
+width: 25px;
+display: block;
+text-indent: -9000px;
+z-index: 1;
+}
+a:active{
+outline: none;
+} 
+</style>
+</head> 
+<body>
+<ul class="star-rating">
+<li class="current-rating">Currently 3.5/5 Stars.</li>
+<li><a href="/" title="1 star out of 5" class="one-star">1</a></li>
+<li><a href="/" title="2 stars out of 5" class="two-stars">2</a></li>
+<li><a href="/" title="3 stars out of 5" class="three-stars">3</a></li>
+<li><a href="/" title="4 stars out of 5" class="four-stars">4</a></li>
+<li><a href="/" title="5 stars out of 5" class="five-stars">5</a></li>
+</ul>
+</body>
+</html>
